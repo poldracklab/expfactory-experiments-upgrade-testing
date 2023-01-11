@@ -1,0 +1,35 @@
+[
+    {
+        "name": "AX-CPT",
+        "template":"jspsych",
+        "run": [
+                "static/jspsych7/jspsych.js",
+                "static/jspsych7/plugin-instructions.js",
+                "static/jspsych7/plugin-html-keyboard-response.js",
+                "static/jspsych7/plugin-html-button-response.js",
+                "static/jspsych7/plugin-survey-text.js",
+                "static/jspsych7/jspsych.css",
+                "static/css/default_style.css",
+                "experiment.js",
+                "style.css"
+               ],
+        "exp_id": "ax_cpt",
+        "cognitive_atlas_task_id": "trm_4c40d2a93ea15",
+        "contributors": [
+                         "Ian Eisenberg",
+                         "Zeynep Enkavi",
+                         "Patrick Bissett",
+                         "Vanessa Sochat",
+                         "Russell Poldrack"
+                        ], 
+        "time":20,
+        "reference": "http://www.pnas.org/content/suppl/2009/04/20/0808187106.DCSupplemental/0808187106SI.pdf#nameddest=STXT",
+        "notes": "Condition indicates cue/target trial type: AX, BX, AY, BY",
+        "publish":"True",
+        "deployment_variables":{"jspsych_init":
+                                        {"fullscreen": true,
+                                        "display_element": "getDisplayElement",
+                                        "on_trial_finish": "addID('ax_cpt')"}
+                       }
+   }
+]
