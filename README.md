@@ -45,7 +45,7 @@ When you load an expfactory experiment `experiment.js` is loaded before the java
 
 jsPsych 7 does not allow access to the global jsPsych object for most thing. Any calls to the global `jsPsych` object in `experiments.js` that happen outside of a function definition will need to be moved, or rewritten in a way that doesn't call `jsPsych`. In jsPsych 7 `initJsPsych` produces a jsPsych object that can be used like the old `jsPsych` global object was used. 
 
-Old jsPsych needed one function call to start an experiment, while jsPsych 7 needs at least two seperate calls. 
+Old jsPsych needed one function call to start an experiment, while jsPsych 7 needs at least two seperate calls. The following are from the html/js templates used by expfactory packages to serve experiments:
 
 Old style:
 ```
